@@ -6,52 +6,248 @@ app.get('/', (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html lang="pt-BR">
+
     <head>
       <meta charset="UTF-8">
-      <title>Hello World</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Desafio[2] DevOps</title>
+
       <style>
-        body {
+        * {
           margin: 0;
-          font-family: 'Segoe UI', sans-serif;
-          background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-          color: #fff;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          min-height: 100vh;
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 100vh;
+          background: #0a0a12;
+          font-family: 'Segoe UI', sans-serif;
+          color: white;
+          padding: 20px;
+        }
+
+        .container {
+          width: 90%;
+          max-width: 1100px;
+          padding: 40px;
           text-align: center;
+
+          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(0,245,255,0.20);
+          border-radius: 16px;
+
+          box-shadow:
+            0 0 25px rgba(0,245,255,0.08);
         }
+
+        .tag {
+          color: #00f5ff;
+          font-size: 0.9rem;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+        }
+
+        .hero {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 35px;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+
         h1 {
-          font-size: 4em;
-          margin-bottom: 0.2em;
-          text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+          font-size: 2.4rem;
+          font-weight: 600;
         }
-        p {
-          font-size: 1.5em;
-          margin-top: 0;
+
+        .agent {
+          font-family: monospace;
+          font-size: 0.72rem;
+          color: #00f5ff;
+          line-height: 1.1;
+          white-space: pre;
+          text-align: left;
+
+          text-shadow:
+            0 0 8px rgba(0,245,255,0.35),
+            0 0 15px rgba(0,245,255,0.15);
         }
-        .btn {
-          display: inline-block;
-          margin-top: 20px;
-          padding: 12px 24px;
-          background: #fff;
-          color: #2575fc;
-          border-radius: 25px;
-          text-decoration: none;
-          font-weight: bold;
-          transition: 0.3s;
+
+        .subtitle {
+          color: #b8b8c5;
+          margin-bottom: 45px;
+          font-size: 1rem;
         }
-        .btn:hover {
-          background: #2575fc;
-          color: #fff;
+
+        .highlight {
+          color: #8b5cf6;
+          font-weight: 600;
         }
+
+        .stack {
+          display: flex;
+          justify-content: center;
+          gap: 35px;
+          flex-wrap: wrap;
+        }
+
+        .item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+
+          color: #7dd3fc;
+          cursor: pointer;
+
+          transition: all 0.3s ease;
+        }
+
+        .item:hover {
+          transform: translateY(-4px);
+          color: #00f5ff;
+        }
+
+        .icon {
+          font-size: 1.8rem;
+        }
+
+        .tooltip {
+          position: absolute;
+          bottom: -110px;
+
+          width: 220px;
+          padding: 12px;
+
+          background: rgba(15,15,25,0.97);
+          border: 1px solid rgba(0,245,255,0.2);
+          border-radius: 10px;
+
+          color: #d1d5db;
+          font-size: 0.8rem;
+          line-height: 1.45;
+
+          opacity: 0;
+          visibility: hidden;
+
+          transition: 0.3s ease;
+          pointer-events: none;
+        }
+
+        .item:hover .tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+
       </style>
     </head>
+
     <body>
-      <div>
-        <h1>Caro Amigo, Bem-vindo! Dayvson Clauber - PG251494 </h1>
+
+      <div class="container">
+
+        <div class="tag">
+          Clauber #PG251494
+        </div>
+
+        <div class="hero">
+
+          <h1>
+            Azure DevOps Journey
+          </h1>
+
+          <pre class="agent">
+____[  ]____
+      /            \\
+     |  __________  |
+     | [  o    o  ] |
+     |--|________|--|
+   __|              |__
+  |__   __________   __|
+ [___] |   [0x]   | [___]
+  | |  |          |  | |
+  |==| |__________| |==|
+  |__|              |__|
+     \\______________/
+        |________|
+          </pre>
+
+        </div>
+
+        <p class="subtitle">
+          Same delivery.
+          <span class="highlight">
+            Engenharia de Otimização de Esteira CI/CD.
+          </span>
+        </p>
+
+        <div class="stack">
+
+          <div class="item">
+
+            <div class="icon">☁</div>
+            <div>Azure Students</div>
+
+            <div class="tooltip">
+              Sem cartão de crédito.<br>
+              US$100 em créditos educacionais.<br>
+              Onboarding rápido na plataforma.
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="icon">⌨</div>
+            <div>Cloud Shell</div>
+
+            <div class="tooltip">
+              Bash e PowerShell nativos.<br>
+              Terminal browser-based.<br>
+              Sem instalação local da CLI.
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="icon">🛡</div>
+            <div>RBAC</div>
+
+            <div class="tooltip">
+              Função Contributor atribuída.<br>
+              Permissões de deployment.<br>
+              Execução automatizada habilitada.
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="icon">⚙</div>
+            <div>Actions</div>
+
+            <div class="tooltip">
+              Pipeline CI/CD configurada.<br>
+              Deploy automatizado.<br>
+              Entrega controlada por versionamento.
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
     </body>
+
     </html>
   `);
 });
