@@ -154,25 +154,25 @@ app.get('/', (req, res) => {
       <div class="container">
 
         <div class="tag">
-          Clauber #PG251494
+         Dayvson Clauber #PG251494
         </div>
 
         <div class="hero">
 
           <h1>
-            Azure DevOps Journey
+            Jornada Azure DevOps
           </h1>
 
           <pre class="agent">
-____[  ]____
+       ____________
       /            \\
      |  __________  |
      | [  o    o  ] |
-     |--|________|--|
+     |--|========|--|
    __|              |__
   |__   __________   __|
  [___] |   [0x]   | [___]
-  | |  |          |  | |
+  | |  |  |||||||  |  | |
   |==| |__________| |==|
   |__|              |__|
      \\______________/
@@ -182,7 +182,7 @@ ____[  ]____
         </div>
 
         <p class="subtitle">
-          Same delivery.
+          Processos Orientados por Entrega.
           <span class="highlight">
             Engenharia de Otimização de Esteira CI/CD.
           </span>
@@ -193,12 +193,12 @@ ____[  ]____
           <div class="item">
 
             <div class="icon">☁</div>
-            <div>Azure Students</div>
+            <div>Azure for Students</div>
 
             <div class="tooltip">
               Sem cartão de crédito.<br>
               US$100 em créditos educacionais.<br>
-              Onboarding rápido na plataforma.
+              Configuração cross de e-mails e Onboarding na plataforma.
             </div>
 
           </div>
@@ -222,7 +222,7 @@ ____[  ]____
             <div>RBAC</div>
 
             <div class="tooltip">
-              Função Contributor atribuída.<br>
+              Linhas de comandos para atribuir função Contributor.<br>
               Permissões de deployment.<br>
               Execução automatizada habilitada.
             </div>
@@ -243,6 +243,13 @@ ____[  ]____
           </div>
 
         </div>
+
+        <p class="subtitle">
+          dclauber@gmail.com.
+          <span class="highlight">
+            (81)98795-7412).
+          </span>
+        </p>
 
       </div>
 
